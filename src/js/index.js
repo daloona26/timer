@@ -1,4 +1,4 @@
-import { Timer } from "./timer";
+import  Timer  from "./timer";
 const durationInput = document.querySelector("#duration");
 const startBtn = document.getElementById("start");
 const pauseBtn = document.getElementById("pause");
