@@ -1,4 +1,4 @@
-export default class Timer {
+class Timer {
   constructor(durationInput, startBtn, pauseBtn, callbacks) {
     this.durationInput = durationInput;
     this.startBtn = startBtn;
@@ -51,3 +51,5 @@ export default class Timer {
     this.durationInput.value = time.toFixed(2);
   }
 }
+
+export default new Timer()
