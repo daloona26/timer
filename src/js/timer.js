@@ -1,4 +1,4 @@
-class Timer {
+export default class Timer {
   constructor(durationInput, startBtn, pauseBtn, callbacks) {
     this.durationInput = durationInput;
     this.startBtn = startBtn;
@@ -12,8 +12,8 @@ class Timer {
 
     this.timeLeft = 30;
 
-    this.startBtn.addEventListener("click", this.start);
-    this.pauseBtn.addEventListener("click", this.pause);
+    this.startBtn.addEventListener("click", this.start.bind(this));
+    this.pauseBtn.addEventListener("click", this.pause.bind(this));
   }
 
   start = () => {
@@ -52,4 +52,4 @@ class Timer {
   }
 }
 
-export default new Timer()
+
