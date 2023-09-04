@@ -1,8 +1,10 @@
+import { Timer } from "./timer";
 const durationInput = document.querySelector("#duration");
 const startBtn = document.getElementById("start");
 const pauseBtn = document.getElementById("pause");
 const circle = document.querySelector("circle");
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
+
 circle.setAttribute("stroke-dasharray", perimeter);
 
 let duration;
